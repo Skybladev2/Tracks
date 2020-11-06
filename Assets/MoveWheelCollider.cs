@@ -23,7 +23,7 @@ public class MoveWheelCollider : MonoBehaviour
         _originalSidewaysFriction = RightWheels[0].sidewaysFriction;
         _originalForwardFriction = RightWheels[0].forwardFriction;
         GetComponent<Rigidbody>().centerOfMass = new Vector3(0, 0, 0);
-        //LeftWheels[0].ConfigureVehicleSubsteps(5, 12, 15);
+        LeftWheels[0].ConfigureVehicleSubsteps(5, 12, 15);
     }
 
     private void FixedUpdate()
